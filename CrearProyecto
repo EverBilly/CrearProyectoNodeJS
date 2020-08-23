@@ -11,3 +11,13 @@ Instalar MySql
 Instalae Body Parser
   - npm install --save body-parser
   
+Instalar Nodemon Para que el servidor se reactive 
+  - npm install nodemon -D
+  Para que funcione iremos a package.json y declararemos una variable
+  y el archivo donde esta la conexion en la parte de "scripts":{
+    "server": "nodemon index.js"
+  }
+  Para ejecutarlo en consola es con: npm run server -> nombre de variable
+
+Instalar Motor de Plantillas 
+  - npm install ejs
