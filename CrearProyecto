@@ -1,0 +1,13 @@
+Crear una carpeta
+Inicializar el Proyecto Con:
+  - npm init
+  
+Instalar Express
+  - npm install --save express
+  
+Instalar MySql
+  - npm install --save mysql
+
+Instalae Body Parser
+  - npm install --save body-parser
+  
