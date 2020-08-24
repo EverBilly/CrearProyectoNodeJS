@@ -4,7 +4,7 @@
   "description": "Inicios NodeJS",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon src/index.js",
+    // "server": "nodemon src/index.js",
     "start": "node ."
   },
   "repository": {
