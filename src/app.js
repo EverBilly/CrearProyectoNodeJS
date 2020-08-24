@@ -40,7 +40,7 @@ app.use(express.urlencoded({extended: false}));//Entiende lo que el formulario m
 app.use('/', customerRoutes); 
 
 //static files
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(app.get('port'), () => {
     console.log('Conexion Stablish Port: ', app.get('port'));
