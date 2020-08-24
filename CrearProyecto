@@ -29,3 +29,13 @@ Instalar Motor de Plantillas
   - npm install ejs
 
 Utilizar Bootstrap y Bootswatch para cambiar de temas
+
+Instalar Heroku CLI desde terminal
+- brew tap heroku/brew && brew install heroku
+
+Entrar al proyecto y crear la app en heroku
+  - heroku create
+
+Cambiar el nombre a la aplicacion
+  heroku apps:rename --app nombre_actual nombre_nuevo (todo en minusculas)
+  
