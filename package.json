@@ -4,11 +4,8 @@
   "description": "Inicios NodeJS",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "node ."
-=======
+    "start": "node .",
     "server": "nodemon src/index.js"
->>>>>>> feature
   },
   "repository": {
     "type": "git",
