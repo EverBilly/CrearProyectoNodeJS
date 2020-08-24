@@ -4,7 +4,7 @@
   "description": "Inicios NodeJS",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
     "body-parser": "^1.19.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "express-myconnection": "^1.0.4",
+    "morgan": "^1.10.0",
     "mysql": "^2.18.1"
   },
   "devDependencies": {

@@ -10,6 +10,12 @@ Instalar MySql
 
 Instalae Body Parser
   - npm install --save body-parser
+
+Instalar Morgan sirve para ver errores http
+  - npm install --save morgan
+
+Instalar MyConnection MySql sirve para agilizar el codigo de conexion a la BD
+ - npm i express-myconnection
   
 Instalar Nodemon Para que el servidor se reactive 
   - npm install nodemon -D
@@ -21,3 +27,5 @@ Instalar Nodemon Para que el servidor se reactive
 
 Instalar Motor de Plantillas 
   - npm install ejs
+
+Utilizar Bootstrap y Bootswatch para cambiar de temas
