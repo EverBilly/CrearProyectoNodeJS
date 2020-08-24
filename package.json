@@ -2,7 +2,7 @@
   "name": "crud-initial",
   "version": "1.0.0",
   "description": "Inicios NodeJS",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node ."
   },
