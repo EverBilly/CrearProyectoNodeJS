@@ -37,5 +37,23 @@ Entrar al proyecto y crear la app en heroku
   - heroku create
 
 Cambiar el nombre a la aplicacion
-  heroku apps:rename --app nombre_actual nombre_nuevo (todo en minusculas)
+  - heroku apps:rename --app nombre_actual nombre_nuevo (todo en minusculas)
   
+Crear addons para la base de datos en heroku BD solo postgresSql
+  - heroku addons:create cleardb:ignite
+
+Obtener el URL de Conexion a la BD Remota
+  - heroku config | grep CLEARDB_DATABASE_URL
+  mysql://b2f2205ee77308:b549501d@us-cdbr-east-02.cleardb.com/heroku_657ce0666ee7b9d?reconnect=true
+
+Asignar url a Variable de configuracion de BD
+  - heroku config:set DATABASE_URL= 'mysql://b2f2205ee77308:b549501d@us-cdbr-east-02.cleardb.com/heroku_657ce0666ee7b9d?reconnect=true'
+
+Configurar la conexion a la BD
+app.use(conexion(mysql, {
+    host: 'us-cdbr-east-02.cleardb.com',
+    user: 'b2f2205ee77308',
+    password: 'b549501d',
+    database: 'heroku_657ce0666ee7b9d'
+}, 'single'));
+

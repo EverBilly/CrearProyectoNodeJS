@@ -19,13 +19,21 @@ app.set('views', path.join(__dirname, 'views'));
 
 //Middlewares
 app.use(morgan('dev'));
-app.use(conexion(mysql, {
+/*app.use(conexion(mysql, {
     host: 'localhost',
     user: 'root',
     port: 3306,
     password: 'Admin2020',
     database: 'crud'
+}, 'single'));*/
+// CONEXION A BD CON HEROKU
+app.use(conexion(mysql, {
+    host: 'us-cdbr-east-02.cleardb.com',
+    user: 'b2f2205ee77308',
+    password: 'b549501d',
+    database: 'heroku_657ce0666ee7b9d'
 }, 'single'));
+
 app.use(express.urlencoded({extended: false}));//Entiende lo que el formulario manda al servidor
 
 //routes
