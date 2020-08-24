@@ -44,3 +44,6 @@ Configurar package.json en scripts
     "server": "nodemon src/app.js",
     "start": "node src/app.js"
   },
+
+  para ver errores en heroku
+    - heroku logs --tail
