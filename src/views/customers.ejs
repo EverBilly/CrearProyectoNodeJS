@@ -1,0 +1,57 @@
+<%- include('partials/_header') -%>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+                <thead>
+                     <tr>
+                         <th>No. </th>
+                         <th>Name</th>
+                         <th>Username</th>
+                         <th>E-mail</th>
+                         <th>Actions</th>
+                     </tr>
+                </thead>
+                <tbody>
+                    <% if(data) { %>
+                         <% for (let i = 0; i < data.length; i++) {%>
+                            <tr>
+                                <td><%= (i + 1) %></td>
+                                <td><%= data[i].name %></td>
+                                <td><%= data[i].username %></td>
+                                <td><%= data[i].email %></td>
+                                <td>
+                                    <a href="/delete/<%= data[i].id%>" class="btn btn-danger">Delete</a>
+                                    <a href="/update/<%= data[i].id%>" class="btn btn-warning">Update</a>
+                                </td>
+                            </tr>
+                         <% }%>
+                    <% }%>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/add" method="POST">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="name" placeholder="Ingresa tu Nombre">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="username" placeholder="Ingrese un Alias">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="email" placeholder="Ingrese su Email">
+                        </div>
+                        <button class="btn btn-primary">
+                            Save User
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include ('partials/_footer') -%>
