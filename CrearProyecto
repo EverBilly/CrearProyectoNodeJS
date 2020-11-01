@@ -57,3 +57,4 @@ app.use(conexion(mysql, {
     database: 'heroku_657ce0666ee7b9d'
 }, 'single'));
 
+Luego de eso creamos la conexion a la base de datos por medio de mysqlWorkbench y creamos las tablas
